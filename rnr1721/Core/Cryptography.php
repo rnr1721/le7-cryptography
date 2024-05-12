@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace rnr1721\Core;
 
+use rnr1721\Core\Contracts\CryptographyInterface;
 use rnr1721\Core\Exceptions\CryptographyException;
 use function openssl_cipher_iv_length,
              openssl_random_pseudo_bytes,
@@ -21,7 +22,7 @@ use function openssl_cipher_iv_length,
  * Class Cryptography
  * Provides methods for encrypting and decrypting passwords using OpenSSL.
  */
-class Cryptography
+class Cryptography implements CryptographyInterface
 {
 
     /**
