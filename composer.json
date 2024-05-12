@@ -1,0 +1,37 @@
+{
+    "name": "rnr1721/le7-cryptography",
+    "description": "Cryptography is a lightweight PHP library designed for password encryption, decryption, verification, and random password generation. This library is dependency-free, requiring only the PHP OpenSSL extension",
+    "keywords": ["component", "cryptography", "passwords", "openssl"],
+    "authors": [
+        {
+            "name": "Eugeny G",
+            "email": "rnr1721@gmail.com",
+            "homepage": "https://github.com/rnr1721",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "rnr1721\\": "rnr1721"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ext-openssl": "*"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^5.7",
+        "phpunit/phpunit": "^10.0"
+    },
+    "scripts": {
+        "test": [
+            "@phpunit",
+            "@psalm"
+        ],
+        "phpunit": "phpunit",
+        "psalm": "psalm"
+    }
+}

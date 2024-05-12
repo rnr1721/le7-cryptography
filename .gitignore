@@ -1,0 +1,8 @@
+/nbproject
+/vendor
+/composer.lock
+/.phpunit.cache/
+.DS_Store
+.idea
+/.phpdoc/
+/phpDocumentor.phar
